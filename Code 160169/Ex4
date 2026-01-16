@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  // Create an array of integers
+  int R1[8] = {155, 155, 180, 170, 175, 174, 165, 162};
+  int R2[] = {162,165};
+  int R12[] = {};
+  
+  //Merge
+  
+  //sort
+      //sort(??, ?? + n);
+  
+  // Loop through integers
+  for (int Height : R1) {
+    cout << Height << "\n";
+    R12[0] = R1[0];
+    cout << "R12(0)" << " = " << R12[0] << "\n";
+  }
+  
+  for (int i :R12) {
+  	cout << i << "\n";
+   }
+  return 0;
+}
