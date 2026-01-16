@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  // Create an array of integers
+  int R1[8] = {155, 155, 180, 170, 175, 174, 165, 162};
+  int W1[8] = {56, 40, 60, 55, 65, 64, 105, 61};
+  string N1[8] = {"Ming", "Mind", "Boss", "Palm", "Fiw","Ten","Frank","Pond"};
+  
+  int R2[8] = {155, 155, 180, 170, 175, 174, 165, 162};
+  int W2[8] = {56, 40, 60, 55, 65, 64, 105, 61};
+  string N2[8] = {"Ming", "Mind", "Boss", "Palm", "Fiw","Ten","Frank","Pond"};
+  
+  //Merge
+  
+  //sort
+  	//sort(??, ?? + n );
+  
+  // Loop through integers
+  for (int n : R1) {
+    cout << n << "\n";
+  }
+  
+    // Loop through integers
+  for (int n : R2) {
+    cout << n << "\n";
+  } 
+  
+   // Loop through integers
+  for (int n : W1) {
+    cout << n << "\n";
+  }
+  
+    // Loop through integers
+  for (int n : W2) {
+    cout << n << "\n";
+  } 
+  return 0;
+}
