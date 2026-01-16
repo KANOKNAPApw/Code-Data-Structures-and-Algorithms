@@ -1,0 +1,25 @@
+w3schools
+
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+  
+  int R1[8] = {155, 155, 180, 170, 175, 174, 165, 162};
+  int n = sizeof(R1)/sizeof(R1[0]);
+  
+// Sort array (by default in ascending order)
+    sort(R1, R1 + n);
+
+    for (int i : R1)
+        cout << i << "\n";
+        
+     sort(R1, R1 + n, greater<int>());
+    
+     for (int i : R1)
+        cout << i << " ";
+    
+    return 0;
+    }
