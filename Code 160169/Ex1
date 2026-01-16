@@ -1,1 +1,18 @@
+w3schools
 
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  // Create an array of integers
+  int R1[8] = {155, 155, 180, 170, 175, 174, 165, 162};
+  int W1[8] = {56, 40, 60, 55, 65, 64, 105, 61};
+  string N1[8] = {"Ming", "Mind", "Boss", "Palm", "Fiw","Ten","Frank","Pond"};
+  
+  // Loop through integers
+  for (int n : R1) {
+    cout << n << "\n";
+  }
+  return 0;
+}
