@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Define the Node struct
+typedef struct Node {
+    char* data;
+    struct Node* next;
+} Node;
+
+// Create a new node
+Node* createNode(char* data) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    if (!newNode) {
+        printf("Memory allocation failed!\n");
+        exit(1);
+    }
+    newNode->data = data;
+    newNode->next = NULL;
+    return newNode;
+}
+
+// Print the linked list
+void printList(Node* node) {
+    while (node) {
+        printf("%s -> ", node->data);
+        node = node->next;
+    }
+    printf("null\n");
+}
+
+int main() {
+    // Create nodes
+    Node* node1 = createNode("Bogie 1");
+    Node* node2 = createNode("Bogie 2");
+    Node* node3 = createNode("Bogie 3");
+    Node* node4 = createNode("Bogie 4");
+    Node* node5 = createNode("Bogie 5");
+    Node* node6 = createNode("Bogie 6");
+    Node* node7 = createNode("Bogie 7");
+
+    // Connect nodes
+    node1->next = node2;
+    node2->next = node3;
+    node3->next = node4;
+    node4->next = node5;
+    node4->next = node6;
+    node4->next = node7;
+
+    // Print linked list
+    printList(node1);
+
+    // Free memory
+    free(node1);
+    free(node2);
+    free(node3);
+    free(node4);
+    free(node5);
+    free(node6);
+    free(node7);
+
+    return 0;
+}
