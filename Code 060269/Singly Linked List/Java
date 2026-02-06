@@ -1,0 +1,40 @@
+public class Main {
+
+    static class Node {
+        String data;
+        Node next;
+
+        Node(String data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    public static void main(String[] args) {
+        // Creating individual nodes
+        Node firstNode = new Node("Bogie 1");
+        Node secondNode = new Node("Bogie 2");
+        Node thirdNode = new Node("Bogie 3");
+        Node fourthNode = new Node("Bogie 4");
+        Node fiveNode = new Node("Bogie 5");
+		Node sixNode = new Node("Bogie 6");
+
+
+        // Linking nodes together
+        firstNode.next = secondNode;
+        secondNode.next = thirdNode;
+        thirdNode.next = fourthNode;
+        fourthNode.next = fiveNode;
+        fiveNode.next = sixNode;
+
+        // Printing linked list
+        Node currentNode = firstNode;
+        while (currentNode != null) {
+            System.out.print(currentNode.data + " -> ");
+            currentNode = currentNode.next;
+        }
+        System.out.println("null");
+    }
+}
+
+//Java
